@@ -6,7 +6,6 @@ document.body.append(container);
 
 let box = document.createElement("div");
 box.id = "box";
-//box.className="visibile";
 container.append(box);
 
 
@@ -48,17 +47,17 @@ for(let i=0; i<images.length; i++){
     }
     box.append(minibox);
 }
-
 //creazione bottoni
+
 let buttonGo = document.createElement ("button");
 buttonGo.type = buttonGo;
-buttonGo.innerHTML = '▲';
+buttonGo.innerHTML = '▶';
 buttonGo.className = "btnAvanti btnStyle";
 box.append(buttonGo);
 
 let buttonBeck = document.createElement ("button");
 buttonBeck.type = buttonBeck;
-buttonBeck.innerText = '▼';
+buttonBeck.innerText = '◀';
 buttonBeck.className = "btnIndietro btnStyle";
 box.append(buttonBeck);
 
