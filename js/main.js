@@ -9,18 +9,6 @@ box.id = "box";
 //box.className="visibile";
 container.append(box);
 
-//creazione bottoni
-let buttonGo = document.createElement ("button");
-buttonGo.type = buttonGo;
-buttonGo.innerHTML = '▲';
-buttonGo.className = "btnAvanti btnStyle";
-box.append(buttonGo);
-
-let buttonBeck = document.createElement ("button");
-buttonBeck.type = buttonBeck;
-buttonBeck.innerText = '▼';
-buttonBeck.className = "btnIndietro btnStyle";
-box.append(buttonBeck);
 
 ///array carosello
 const images = [
@@ -59,8 +47,21 @@ for(let i=0; i<images.length; i++){
     box.append(minibox);
 }
 
+//creazione bottoni
+let buttonGo = document.createElement ("button");
+buttonGo.type = buttonGo;
+buttonGo.innerHTML = '▲';
+buttonGo.className = "btnAvanti btnStyle";
+box.append(buttonGo);
+
+let buttonBeck = document.createElement ("button");
+buttonBeck.type = buttonBeck;
+buttonBeck.innerText = '▼';
+buttonBeck.className = "btnIndietro btnStyle";
+box.append(buttonBeck);
+
 //raggruppo le card 
-const imgContainer = document.querySelectorAll("#minibox");
+const imgContainer = document.querySelectorAll("#box > div");
 let inizioCard = 0;
 
 //bottone avanti
